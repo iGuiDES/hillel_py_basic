@@ -1,16 +1,19 @@
-user_string = input('Введіть рядок довжиною 15 символів: ')
+user_input = input("Будь ласка, введіть рядок з 15-ма символами: ")
 
-if len(user_string) == '':
-    print('Введені дані не відповідають вимогам!')
+if len(user_input) == 0:
+    print("Рядок не може бути пустим. Спробуйте ще раз")
 else:
-    if len(user_string) < 15:
-        user_string += user_string * 3
+    while len(user_input) < 15:
+        user_input += user_input * 3
 
-    char_list = list(user_string)
+    char_list = list(user_input[:15])
+
     print('Повний список: ', char_list)
-    print('Останні 5 елементів: ', char_list[-5:])
+    print('Останніх 5 елементів списку: ', char_list[-5:])
+    print('Список в зворотній послідовності: ', char_list[::-1])
+    print('Елементи з парними послідовностями: ', char_list[::2])
 
-    reverse_list = char_list[::-1]
-    print('Список у зворотній послідовності: ', reverse_list)
-
-    even_list = [char_list]
+    if char_list[:5] == char_list[-5:]:
+        print("Перші 5 елементів такі ж, як останні 5 елементів списку.")
+    else:
+        print("Перші 5 елементів НЕ такі ж, як останні 5 елементів списку.")
