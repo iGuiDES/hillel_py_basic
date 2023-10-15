@@ -9,5 +9,4 @@ for i in range(1, N + 1):
         numbers.append(i)
 
 if numbers:
-    print("Антропоморфні числа, які не перевищують", N, ":")
-    print(numbers)
+    print("Антропоморфні числа, які не перевищують", N, ":", numbers)
