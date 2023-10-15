@@ -1,10 +1,7 @@
 N = int(input("Введіть число N: "))
 
-square = 0
+for i in range(N + 1):
+    square = i ** 2
 
-while square <= N:
-    square = square + 1
-    square_value = square * square
-
-    if square_value > N:
-        print(square_value, end=' ')
+    if square <= N:
+        print(square)
