@@ -1,4 +1,6 @@
-numbers = {i: i+1 for i in range(20)}
+numbers = {}
+for i in range(20):
+    numbers[i] = i+1
 
 _sum = 1
 for number in numbers.values():

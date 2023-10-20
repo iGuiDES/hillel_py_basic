@@ -1,3 +1,5 @@
-numbers = {i: i**3 for i in range(1, 10 + 1)}
+numbers = {}
+for i in range(1, 11):
+    numbers[i] = i**3
 
 print(numbers)
