@@ -1,21 +1,20 @@
-'''
-	Згенеруйте  список цілих чисел int_elements довжино 25 елементів. Числа мають бути випадкові в диапазоні  1 - 500.
-	Виведіть на єкран список int_elements.
-	Ваше завдання – вивести наступні списки по одному в рядку:
-	Список, що складається із квадратів int_elements.
-	Список, що складається із остач ділення на 11 елементів int_elements.
-	Список, що складається лише з парних елементів int_elements.
-	Список, що складається лише з елементів int_elements з непарною кількістю цифр.
-	Список, що складається з елементів int_elements, що стоять на позиціях які  не є кратними 3.
-	Вихідні дані
-	У кожному із шести рядків виведіть відповідний список у стандартному форматі python'а.
-'''
+import random
 
+int_elements = [random.randint(1, 500) for _ in range(25)]
 
-import random 
+print("Список int_elements:", int_elements)
 
-line_range = 25
+squares = [x**2 for x in int_elements]
+print("Список квадратів:", squares)
 
-int_elements = [random.randint(1, 500) for _ in range(line_range)]
+remainders_11 = [x % 11 for x in int_elements]
+print("Список залишку ділення на 11:", remainders_11)
 
-print(int_elements)
+even_elements = [x for x in int_elements if x % 2 == 0]
+print("Список парних елементів:", even_elements)
+
+odd_digits_elements = [x for x in int_elements if len(str(x)) % 2 != 0]
+print("Список елементів із непарною кількістю цифр:", odd_digits_elements)
+
+not_multiple_of_3 = [x for i, x in enumerate(int_elements) if (i+1) % 3 != 0]
+print("Список елементів на позиціях, які не кратні 3:", not_multiple_of_3)

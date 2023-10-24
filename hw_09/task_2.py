@@ -1,13 +1,18 @@
-"""
-Напишіть програму, яка виводить квадратну матрицю розміру n на n заповнену випадковими числами.n = запросити у користувача
-Вивести значення у вигляді матриці чисел. 
-Вивести в термінал - суму чисел по діагоналі 
-Вивести на єкран суму чисел остнанього стовбця. 
-( Можна використити вираз і функцію sum() )
-"""
-
 import random
 
 n = int(input('Введіть розмір матриці: '))
 
-matrix = [[random.randint(1, 100) for _ in range(n)] for __ in range(n)]
+matrix = [
+    [random.randint(1, 100) for _ in range(n)] for __ in range(n)
+]
+
+for row in matrix:
+    print(row)
+
+d_sum = sum(
+    matrix[i][i] for i in range(n)
+)
+print(f'Сума чисел по діагоналі: {d_sum}')
+
+last_col_sum = sum(row[-1] for row in matrix)
+print(f'Сума чисел останньої колонки: {last_col_sum}')
