@@ -7,18 +7,17 @@ data = [
     {"name": "Ben", "country": "US", "item": "pencil", "price": 10}
 ]
 
-workers_set = {item['name'] for item in data}
+workers_set = {
+    item['name'] for item in data
+}
+
 print(workers_set)
 
-profits_dict = {}
-
-for profit in data:
-    worker = profit['name']
-    profits = profit['price']
-
-    if worker in profits_dict:
-        profits_dict[worker] += profits
-    else:
-        profits_dict[worker] = profits
+profits_dict = {
+    worker:
+        sum(item['price'] for item in data
+        if item['name'] == worker)
+        for worker in workers_set
+}
 
 print(profits_dict)
