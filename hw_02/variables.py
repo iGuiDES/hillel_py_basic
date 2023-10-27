@@ -3,7 +3,7 @@
     has been worked out built-in function input for interaction with users
     and print for outputting the result
 """
-
+# pylint: disable=invalid-name
 # A
 print("___________A___________")
 
