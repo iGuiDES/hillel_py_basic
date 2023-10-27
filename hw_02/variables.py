@@ -1,3 +1,9 @@
+"""
+    In this module, the practice of working with variables and their use
+    has been worked out built-in function input for interaction with users
+    and print for outputting the result
+"""
+
 # A
 print("___________A___________")
 
