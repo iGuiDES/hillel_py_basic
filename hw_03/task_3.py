@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 user_name = 'Олександр'
 my_root_password = 'P@$w0rd'

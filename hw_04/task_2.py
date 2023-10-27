@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 print("*" * 10, 'A', "*" * 10)
 

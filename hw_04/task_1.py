@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 user_input = input("Будь ласка, введіть рядок з 15-ма символами: ")
 

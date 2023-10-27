@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 lst = [1, 2, 3, "text", (4, 5), [6, 7], {"key": "value"}, 8, 9, 10]
 

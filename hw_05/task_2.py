@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 N = int(input("Введіть число N: "))
 

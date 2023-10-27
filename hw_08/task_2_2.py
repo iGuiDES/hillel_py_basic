@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 list1 = [1, 2, 3, 4, 5, 5, 5]
 list2 = [4, 5, 6, 7, 8, 8, 8]

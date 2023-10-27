@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 user_number = int(input("Input number: "))
 with_n = len(str(user_number))

@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 schoolchildren = int(input('Введіть кількість школярів: '))
 apples = int(input('Введіть кількість яблук: '))

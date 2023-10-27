@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 e_class_1 = int(input('Скільки учнів у класі №1: '))
 e_class_2 = int(input('Скільки учнів у класі №2: '))

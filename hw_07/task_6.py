@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 text = """
     Любіть Україну, як сонце, любіть,

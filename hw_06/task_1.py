@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 loan_amount = int(input("Введіть суму кредиту: "))
 

@@ -1,4 +1,5 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
 data = [
     {"name": "Alisa", "country": "UA", "item": "socks", "price": 15},

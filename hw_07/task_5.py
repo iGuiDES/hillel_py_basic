@@ -1,6 +1,10 @@
 # pylint: disable=missing-module-docstring
+# pylint: disable=invalid-name
 
-text = 'Python is good language to learn and in same time we like to tell that it is cool expereance for us'
+text = """Python is good language to learn 
+          and in same time we like to tell 
+          that it is cool expereance for us
+       """
 
 letter_count = {}
 
