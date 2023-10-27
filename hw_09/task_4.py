@@ -16,7 +16,7 @@ print(workers_set)
 profits_dict = {
     worker:
         sum(item['price'] for item in data
-        if item['name'] == worker)
+            if item['name'] == worker)
         for worker in workers_set
 }
 
