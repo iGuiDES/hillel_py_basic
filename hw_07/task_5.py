@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 text = 'Python is good language to learn and in same time we like to tell that it is cool expereance for us'
 
 letter_count = {}

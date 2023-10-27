@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 import random
 
 random_set = {random.randint(100, 200) for _ in range(15)}

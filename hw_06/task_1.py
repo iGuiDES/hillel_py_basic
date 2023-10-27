@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 loan_amount = int(input("Введіть суму кредиту: "))
 
 periods = [12, 60]

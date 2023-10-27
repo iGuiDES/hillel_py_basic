@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 lst = [1, 2, 3, "text", (4, 5), [6, 7], {"key": "value"}, 8, 9, 10]
 
 result_set = set()

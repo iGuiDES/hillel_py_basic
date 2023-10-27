@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 N = int(input("Введіть число N: "))
 
 for i in range(1, N + 1):

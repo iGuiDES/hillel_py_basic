@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 print("*" * 10, 'A', "*" * 10)
 
 first_tuple = (1, 2, 3)

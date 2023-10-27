@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 user_input = input("Будь ласка, введіть рядок з 15-ма символами: ")
 
 if len(user_input) == 0:

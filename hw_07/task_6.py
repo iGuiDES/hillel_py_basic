@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 text = """
     Любіть Україну, як сонце, любіть,
     як вітер, і трави, і води…

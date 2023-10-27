@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 total = 0
 count = 0
 max_number = None

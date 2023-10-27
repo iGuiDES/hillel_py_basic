@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 numbers = {}
 for i in range(20):
     numbers[i] = i+1

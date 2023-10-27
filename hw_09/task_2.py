@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 import random
 
 n = int(input('Введіть розмір матриці: '))

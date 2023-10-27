@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 user_name = 'Олександр'
 my_root_password = 'P@$w0rd'
 password_entered = input('Введіть Ваш пароль: ')

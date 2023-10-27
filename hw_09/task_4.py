@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 data = [
     {"name": "Alisa", "country": "UA", "item": "socks", "price": 15},
     {"name": "Alisa", "country": "UA", "item": "socks", "price": 25},

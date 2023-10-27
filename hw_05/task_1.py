@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 user_number = input('Введіть число:')
 
 checker = False

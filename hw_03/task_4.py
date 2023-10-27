@@ -1,3 +1,5 @@
+# pylint: disable=missing-module-docstring
+
 year = int(input('Введіть рік: '))
 
 if year < 1900 and year < 1_000_000:
