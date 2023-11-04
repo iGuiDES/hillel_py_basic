@@ -1,7 +1,7 @@
 import random
 
 
-def sort_matrix(M):
+def sort_matrix(num):
     """
         Створює та сортує квадратну матрицю розмірності M x M з випадковими
         числами від 1 до 50.
@@ -12,7 +12,7 @@ def sort_matrix(M):
         зростанням, якщо парний - за спаданням.
 
         Args:
-            M (int): Розмірність квадратної матриці, має бути більше 5.
+            num (int): Розмірність квадратної матриці, має бути більше 5.
 
         Returns:
             tuple: Повертає кортеж, який містить:
@@ -20,23 +20,25 @@ def sort_matrix(M):
                 - список сум стовпців оригінальної матриці (list of int)
         """
 
-    mx = [[random.randint(1, 50) for _ in range(M)] for _ in range(M)]
+    mx = [
+        [random.randint(1, 50) for _ in range(num)] for _ in range(num)
+    ]
 
     print("\nПочаткова матриця:\n")
     print_matrix(mx)
 
     col_sum = [sum(column) for column in zip(*mx)]
 
-    for i in range(M - 1):
-        for j in range(M - 1 - i):
+    for i in range(num - 1):
+        for j in range(num - 1 - i):
             if col_sum[j] > col_sum[j + 1]:
                 col_sum[j], col_sum[j + 1] = col_sum[j + 1], col_sum[j]
                 for row in mx:
                     row[j], row[j + 1] = row[j + 1], row[j]
 
-    for j in range(M):
-        for i in range(M - 1):
-            for k in range(M - 1 - i):
+    for j in range(num):
+        for i in range(num - 1):
+            for k in range(num - 1 - i):
                 if ((j + 1) % 2 == 1 and mx[k][j] < mx[k + 1][j]) or (
                         (j + 1) % 2 == 0 and mx[k][j] > mx[k + 1][j]):
                     mx[k][j], mx[k + 1][j] = mx[k + 1][j], mx[k][j]
