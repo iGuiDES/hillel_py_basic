@@ -9,7 +9,8 @@ def bubble_sort_decorator(func):
             for j in range(0, lm - i - 1):
                 if sum(m_lst[j]) > sum(m_lst[j + 1]):
                     for k in range(lm):
-                        m_lst[k][j], m_lst[k][j + 1] = m_lst[k][j + 1], m_lst[k][j]
+                        m_lst[k][j], m_lst[k][j + 1] = (
+                            m_lst[k][j + 1], m_lst[k][j])
 
         func(m_lst)
     return wrapper
