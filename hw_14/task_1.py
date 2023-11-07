@@ -37,17 +37,17 @@ class ChessBoard:
             ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
         ) + '  ')
 
-        print('   ' + '┌───' * 8 + '┐')
+        print('   ' + '╔═══' * 8 + '╗')
 
         for row in range(8):
-            print(f' {8 - row} │', end="")
+            print(f' {8 - row} ║', end="")
 
             for col in range(8):
-                print(f" {self.board[row][col]} │", end="")
+                print(f" {self.board[row][col]} ║", end="")
             print(f' {8 - row}')
             if row < 7:
-                print('   ├' + '───┼' * 7 + '───┤')
-        print('   ' + '└───' * 8 + '┘')
+                print('   ╠' + '═══╬' * 7 + '═══╣')
+        print('   ' + '╚═══' * 8 + '╝')
         print('    ' + '   '.join(
             ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
         ) + '  ')
