@@ -8,7 +8,6 @@
     до тексту.
 """
 
-
 colour = {
     'red': '31m',
     'black': '30m',
@@ -17,11 +16,11 @@ colour = {
     'blue': '34m',
     'purpure': '35m',
     'biruza': '36m',
-    'white': '37m'
+    'white': '37m',
 }
 
 
-def color_text(text, colour_name):
+def color_text(text: str, colour_name: str) -> str:
     """
         Застосовує вказаний колір до заданого текстового рядка.
 
@@ -40,7 +39,7 @@ def color_text(text, colour_name):
     return coloured_txt
 
 
-def styled(text, code="3m"):
+def styled(text: str, code: str = "3m") -> str:
     """
         Застосовує вказаний ANSI-стиль до заданого текстового рядка.
 
@@ -61,7 +60,22 @@ def styled(text, code="3m"):
     return styled_txt
 
 
-def error_message(message):
+def background_color(text: str, bg_colour: str = '45m') -> str:
+    """
+        Застосовує вказаний колір фону до заданого текстового рядка.
+
+        Параметри:
+        text (str): Текст, для якого потрібно змінити фон.
+        bg_colour_name (str): Назва кольору фону зі словника 'colour'.
+
+        Повертає:
+        str: Текст зі зміненим кольором фону.
+    """
+    bg_colour_code = '\033[' + bg_colour
+    return f'{bg_colour_code}{text}\033[0m'
+
+
+def error_message(message: str) -> str:
     """
         Генерує повідомлення про помилку з певним форматуванням.
 
@@ -82,7 +96,7 @@ def error_message(message):
     return err_message
 
 
-def warning_message(message):
+def warning_message(message: str) -> str:
     """
         Генерує попереджувальне повідомлення з певним форматуванням.
 
@@ -104,7 +118,7 @@ def warning_message(message):
     return warn_message
 
 
-def info_message(message):
+def info_message(message: str) -> str:
     """
         Генерує інформаційне повідомлення з певним форматуванням.
 
@@ -120,8 +134,8 @@ def info_message(message):
 
     status = "INFO"
     info = color_text(f"{status:<8} ", colour['purpure'])
-    info_message = info + message
-    return info_message
+    info_msg = info + message
+    return info_msg
 
 
 """
@@ -132,7 +146,6 @@ f  = "\033[41m";
 clean = "\033[0m"
 pattern = f"{s}{c}{f}{txt}{clean}"
 """
-
 
 if __name__ == "__main__":
     print(warning_message("ups i did sit again"))
