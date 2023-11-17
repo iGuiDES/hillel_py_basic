@@ -136,18 +136,3 @@ def info_message(message: str) -> str:
     info = color_text(f"{status:<8} ", colour['purpure'])
     info_msg = info + message
     return info_msg
-
-
-"""
-Example:
-s = "\033[3m"
-c = "\033[33m"
-f  = "\033[41m";
-clean = "\033[0m"
-pattern = f"{s}{c}{f}{txt}{clean}"
-"""
-
-if __name__ == "__main__":
-    print(warning_message("ups i did sit again"))
-    print(error_message("wrong way"))
-    print(info_message("thanks for info"))
